@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import styles from './Jokes.module.css';
 import Joke from '../joke/Joke';
-import Loader from "./Loader";
+import Loader from './Loader';
 
 
 const Jokes = () => {
   const [jokes, setJokes] = useState([]);
   const [err, setErr] = useState(null);
-  const [typee, setType] = useState("");
-  
+
 
   useEffect(() =>{
     fetch("https://v2.jokeapi.dev/joke/Programming?amount=10")
@@ -25,7 +25,10 @@ if (err !==null){
 }
 else {
 return (
-<div>
+<div
+className={styles.Jokes}
+>
+<h5>&#128517;jokes on you! &#128517; &#9774;</h5>
 
 {jokes.length > 0 ? (jokes.map((joke => 
 
@@ -39,12 +42,8 @@ return (
   ) : (
     <Loader />
     )
-    
     } 
     </div> );
-  
-
-
 };
 }
 

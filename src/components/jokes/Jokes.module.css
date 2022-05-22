@@ -1,0 +1,50 @@
+.Jokes {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.Jokes>h5{
+    font-style: oblique;
+    font-size:3rem;
+    Text-transform:uppercase;
+    color: #ff1d58;
+    font-weight:800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.jokeContainer {
+    width: 50%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(76, 6, 6, 0.48);
+    backdrop-filter: blur(6.6px);
+    border: 2px solid #0b2796;
+    border-radius: 50px;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.onePartJokeHeader {
+    font-size: 2rem;
+    color:#FFCC70;
+    text-transform: capitalize;
+    text-decoration: underline;
+
+}
+.twoPartJokeHeader {
+    font-size: 2rem;
+    color:#12343b;
+    text-transform: capitalize;
+    text-decoration: underline;
+
+}
+.paraFirstPart{
+    font-size: 1.5rem;
+
+}
+.paraSecondPart:before{
+      content: "-";
+    }
+.paraSecondPart{
+    font-size: 1rem;
+}
